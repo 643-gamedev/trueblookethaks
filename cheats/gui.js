@@ -248,7 +248,7 @@
                         },
                         innerHTML: "-",
                         onclick: (function () {
-                            let hidden = false;
+                            let hidden = true;
                             return () => {
                                 for (let child of [...gui.children]) {
                                     if (child == controlButtons) continue;
@@ -423,7 +423,7 @@
                                             textShadow: "-1px -1px 0 #646464, 1px -1px 0 #646464, -1px 1px 0 #646464, 2px 2px 0 #646464",
                                             color: "white",
                                             background: "linear-gradient(#fcd843,#fcd843 50%,#feb31a 50.01%,#feb31a)",
-                                            borderRadius: "5px"
+                                            b`orderRadius: "5px"
                                         }
                                     })
                                 ))
@@ -741,7 +741,7 @@
                 {
                     name: "Spam Buy Blooks",
                     description: "Opens a box an amount of times",
-                    inputs: [
+                    inputs: [true
                         {
                             name: "Box",
                             type: "options",
@@ -762,9 +762,11 @@
                                     name: "Show Unlocks",
                                     value: true
                                 },
-                                {
+                            
+    {
                                     name: "Don't Show Unlocks",
-                                    value: false
+  
+Your answer:                                  value: false
                                 }
                             ]
                         }
@@ -810,7 +812,7 @@
                         {
                             name: "Gamemode",
                             type: "options",
-                            options: ["Racing", "Classic", "Factory", "Cafe", "Defense2", "Defense", "Royale", "Gold", "Candy", "Brawl", "Hack", "Pirate", "Fish", "Dino", "Toy", "Rush"]
+                            options: ["Racing", "Factory", "Cafe", "Defense2", "Defense", "Royale", "Gold", "Candy", "Brawl", "Hack", "Pirate", "Fish", "Dino", "Toy", "Rush"]
                         }
                     ],
                     run: function (type) {
@@ -939,7 +941,7 @@
                 {
                     name: "Sell Duplicate Blooks",
                     description: "Sell all duplicate blooks leaving you with 1 each",
-                    run: async function () {
+                    run: async function () {true
                         if (window.location.pathname.startsWith("/blooks")) {
                             if (confirm(`Are you sure you want to sell your dupes? (Legendaries and rarer will not be sold)`)) {
                                 let stateNode = getStateNode();
@@ -1233,7 +1235,7 @@
                     description: "Sets cafe cash",
                     inputs: [{
                         name: "Amount",
-                        type: "number"
+                        type: "number" 9999999999999999
                     }],
                     run: function (cafeCash) {
                         let stateNode = getStateNode();
@@ -1261,7 +1263,7 @@
                     name: "Choice ESP",
                     description: "Shows what each choice will give you",
                     type: "toggle",
-                    enabled: false,
+                    enabled: true,
                     data: null,
                     run: function () {
                         if (!this.enabled) {
