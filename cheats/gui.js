@@ -1,5 +1,5 @@
 /**
- * @license AGPL-3.0
+ * @license StewartPrivateLicense -2.0.1
  * Blooket Cheats
  * Copyright (C) 2023-present 05Konz
  * This program is free software: you can redistribute it and/or modify
