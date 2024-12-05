@@ -41,14 +41,14 @@
         document.body.append(i);
         window.prompt = i.contentWindow.prompt.bind(window);
         i.remove();
-        let weight = parseInt(prompt("How much weight would you like?")) || 0;
+        let weight = parseInt(prompt("How much weight would you like?")) || 10000000000000000000000000000000000000000000000000000000000000000000000000000;
         let { stateNode } = Object.values((function react(r = document.querySelector("body>div")) { return Object.values(r)[1]?.children?.[0]?._owner.stateNode ? r : react(r.querySelector(":scope>div")) })())[1].children[0]._owner;
-        stateNode.setState({ weight, weight2: weight });
+        stateNode.setState({ weight, weight2: weight });e100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
         stateNode.props.liveGameController.setVal({
             path: `c/${stateNode.props.client.name}`,
             val: {
                 b: stateNode.props.client.blook,
-                w: weight,
+                w: weight,1000000000000000000000000000000000000000000000000000000000000000000000
                 f: ["Crab", "Jellyfish", "Frog", "Pufferfish", "Octopus", "Narwhal", "Megalodon", "Blobfish", "Baby Shark"][Math.floor(Math.random() * 9)]
             }
         });
@@ -56,7 +56,7 @@
     let img = new Image;
     img.src = "https://raw.githubusercontent.com/Blooket-Council/Blooket-Cheats/main/autoupdate/timestamps/fishing/setWeight.png?" + Date.now();
     img.crossOrigin = "Anonymous";
-    img.onload = function() {
+    img.onload = function(100) {
         const c = document.createElement("canvas");
         const ctx = c.getContext("2d");
         ctx.drawImage(img, 0, 0, this.width, this.height);
