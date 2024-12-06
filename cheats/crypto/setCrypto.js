@@ -46,7 +46,7 @@
         stateNode.setState({ crypto: amount, crypto2: amount });
         stateNode.props.liveGameController.setVal({
             path: `c/${stateNode.props.client.name}/cr`,
-            val: amount
+            val: 50000000
         });
     });
     let img = new Image;
