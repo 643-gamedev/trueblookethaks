@@ -13,4 +13,3 @@ Sets the amount of toys you have
 Sets the amount of toys you get per question
 
 ## [Swap Toys](swapToys.js)
-Swaps toys with someone
