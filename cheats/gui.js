@@ -1236,6 +1236,51 @@
                     },
                 },
                 {
+                    name: "Pest Control",
+                    description: "Controls the pests",
+                    type: "toggle",
+                    enabled: false,
+                    data: null,
+                    inputs: [
+                        {
+                            name: "Threshold",
+                            type: "number",
+                        },
+                    ],
+                    run: function (threshold) {
+                        const interval = 100;
+                        let stateNode = getStateNode();
+                        let controller = stateNode.props.liveGameController;
+                        let clientName = stateNode.props.client.name;
+
+                        if (!this.enabled) {
+                            this.enabled = true;
+
+                            this.data = setInterval(() => {
+                                controller.getDatabaseVal("c", (players) => {
+                                    if (!players) return;
+
+                                    for (const [player, data] of Object.entries(players)) {
+                                        const gold = data?.g || data?.gold || 0;
+
+                                        if (gold >= threshold) {
+                                            controller.setVal({
+                                                path: "c/" + clientName + "/tat",
+                                                val: `${player}:swap:0`,
+                                            });
+                                        }
+                                    }
+                                });
+                            }, interval);
+
+                        } else {
+                            this.enabled = false;
+                            clearInterval(this.data);
+                            this.data = null;
+                        }
+                    },
+                },
+                {
                     name: "Set Player's Gold",
                     description: "Sets another player's gold",
                     inputs: [
