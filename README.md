@@ -29,6 +29,10 @@ We as the original creators of this repository can not be charged or held liable
 
 ## Information
 
+<details><summary><h3>is sammep gay?</h3></summary>
+i honestly do not know what to sya, but its 50/50 either he is or he isn't
+</details>
+
 <details><summary><h3>How to use</h3></summary>
 
 There are 2 good methods to using these scripts:
@@ -51,7 +55,7 @@ Make sure you're running it properly, if it still doesn't work and other cheats 
 
 You should use the scripts ending in ".min.js", as using the others will have errors due to formatting.
 </details>
-<details><summary><h3>Can will saral ouch grass after coding for 1 hours</h3></summary>
+<details><summary><h3>Can will saral touch grass after coding for 11 hours</h3></summary>
 wtf,i litterly just went outside
 </details>
 
