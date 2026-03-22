@@ -1,4 +1,4 @@
-<p align="center">Cheats made by someone who knows more about what they're doing</p>
+<p align="center">Cheats made by someone who knows more about what they're doing_oh COME ON I KNOW WHAT IM DOING-kind of--643-gamedev</p>
 <h3 align="center"><a href="https://discord.gg/jHjGrrdXP6">Support Server</a></h2>
 <h3 align="center"><a href="tutorial/readme.md">Instructions for importing bookmarklets</a></h2>
 
@@ -50,6 +50,9 @@ Make sure you're running it properly, if it still doesn't work and other cheats 
 <details><summary><h3>Which script should I use to make a bookmarklet?</h3></summary>
 
 You should use the scripts ending in ".min.js", as using the others will have errors due to formatting.
+</details>
+<details><summary><h3>Can will saral ouch grass after coding for 1 hours</h3></summary>
+wtf,i litterly just went outside
 </details>
 
 <details><summary><h3>Can you give me infinite tokens / bypass daily limit / permanently give me blooks / change pack luck?</h3></summary>
